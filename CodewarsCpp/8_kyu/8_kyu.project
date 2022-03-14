@@ -3,6 +3,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="Count Odd Numbers below n.cpp"/>
     <File Name="PointsOfReflection.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
