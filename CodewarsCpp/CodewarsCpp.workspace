@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CodewarsCpp" Database="" Version="10000">
-  <Project Name="8_kyu" Path="8_kyu/8_kyu.project" Active="Yes"/>
+  <Project Name="8_kyu" Path="8_kyu/8_kyu.project" Active="No"/>
+  <Project Name="Another" Path="Another/Another.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="8_kyu" ConfigName="Debug"/>
+      <Project Name="Another" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="8_kyu" ConfigName="Release"/>
+      <Project Name="Another" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

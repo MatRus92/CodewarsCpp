@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=mateu
-Date                   :=14/03/2022
+Date                   :=15/03/2022
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/mingw32/bin/g++.exe
 SharedObjectLinkerName :=C:/mingw32/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/mingw32/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) $(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) 
 
 
 
@@ -93,17 +93,17 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix): Count Odd Numbers below n.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(DependSuffix) -MM "Count Odd Numbers below n.cpp"
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/8_kyu/Count Odd Numbers below n.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(PreprocessSuffix): Count Odd Numbers below n.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(PreprocessSuffix) "Count Odd Numbers below n.cpp"
-
 $(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix): PointsOfReflection.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/PointsOfReflection.cpp$(DependSuffix) -MM PointsOfReflection.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/8_kyu/PointsOfReflection.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/PointsOfReflection.cpp$(PreprocessSuffix): PointsOfReflection.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/PointsOfReflection.cpp$(PreprocessSuffix) PointsOfReflection.cpp
+
+$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix): Count Odd Numbers below n.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(DependSuffix) -MM "Count Odd Numbers below n.cpp"
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/8_kyu/Count Odd Numbers below n.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(PreprocessSuffix): Count Odd Numbers below n.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(PreprocessSuffix) "Count Odd Numbers below n.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
