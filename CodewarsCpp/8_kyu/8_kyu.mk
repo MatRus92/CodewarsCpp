@@ -62,7 +62,7 @@ AS       := C:/mingw32/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Opposites Attract.cpp$(ObjectSuffix) $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) $(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Is it a palindrome.cpp$(ObjectSuffix) $(IntermediateDirectory)/Opposites Attract.cpp$(ObjectSuffix) $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) $(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) 
 
 
 
@@ -93,6 +93,12 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/Is it a palindrome.cpp$(ObjectSuffix): Is it a palindrome.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Is it a palindrome.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Is it a palindrome.cpp$(DependSuffix) -MM "Is it a palindrome.cpp"
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/8_kyu/Is it a palindrome.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Is it a palindrome.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Is it a palindrome.cpp$(PreprocessSuffix): Is it a palindrome.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Is it a palindrome.cpp$(PreprocessSuffix) "Is it a palindrome.cpp"
+
 $(IntermediateDirectory)/Opposites Attract.cpp$(ObjectSuffix): Opposites Attract.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Opposites Attract.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Opposites Attract.cpp$(DependSuffix) -MM "Opposites Attract.cpp"
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/8_kyu/Opposites Attract.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Opposites Attract.cpp$(ObjectSuffix) $(IncludePath)
