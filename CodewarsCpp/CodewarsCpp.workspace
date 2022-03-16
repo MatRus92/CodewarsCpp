@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CodewarsCpp" Database="" Version="10000">
-  <Project Name="8_kyu" Path="8_kyu/8_kyu.project" Active="Yes"/>
-  <Project Name="Another" Path="Another/Another.project" Active="No"/>
+  <Project Name="8_kyu" Path="8_kyu/8_kyu.project" Active="No"/>
+  <Project Name="Another" Path="Another/Another.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

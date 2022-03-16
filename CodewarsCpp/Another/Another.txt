@@ -1,1 +1,1 @@
-Debug/Frogs.cpp.o   
+Debug/ReverseNumber.cpp.o Debug/Frogs.cpp.o   

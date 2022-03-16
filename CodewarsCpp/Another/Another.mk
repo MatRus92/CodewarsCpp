@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=mateu
-Date                   :=15/03/2022
+Date                   :=16/03/2022
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/mingw32/bin/g++.exe
 SharedObjectLinkerName :=C:/mingw32/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/mingw32/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Frogs.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/ReverseNumber.cpp$(ObjectSuffix) $(IntermediateDirectory)/Frogs.cpp$(ObjectSuffix) 
 
 
 
@@ -93,6 +93,12 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/ReverseNumber.cpp$(ObjectSuffix): ReverseNumber.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/ReverseNumber.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/ReverseNumber.cpp$(DependSuffix) -MM ReverseNumber.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/Another/ReverseNumber.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/ReverseNumber.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/ReverseNumber.cpp$(PreprocessSuffix): ReverseNumber.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/ReverseNumber.cpp$(PreprocessSuffix) ReverseNumber.cpp
+
 $(IntermediateDirectory)/Frogs.cpp$(ObjectSuffix): Frogs.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Frogs.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Frogs.cpp$(DependSuffix) -MM Frogs.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/Another/Frogs.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Frogs.cpp$(ObjectSuffix) $(IncludePath)

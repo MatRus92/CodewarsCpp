@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\REPO\CodewarsCpp\CodewarsCpp\CodewarsCpp.workspace">
-  <int Value="1" Name="m_selectedTab"/>
+  <int Value="0" Name="m_selectedTab"/>
   <wxString Value="C:\REPO\CodewarsCpp\CodewarsCpp\CodewarsCpp.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\REPO\CodewarsCpp\CodewarsCpp\8_kyu\PointsOfReflection.cpp" Name="FileName"/>
+      <wxString Value="C:\REPO\CodewarsCpp\CodewarsCpp\8_kyu\Is it a palindrome.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="3" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\REPO\CodewarsCpp\CodewarsCpp\8_kyu\Count Odd Numbers below n.cpp" Name="FileName"/>
+      <wxString Value="C:\REPO\CodewarsCpp\CodewarsCpp\Another\Frogs.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="2" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

@@ -68,17 +68,3 @@ int solution(std::vector<int> blocks)
 	
 	return calculateMaxValue(blocksSize, left, right) + 1;
 }
-
-int main()
-{
-	std::vector<int> blocks = {2, 6, 8, 5};
-	std::cout << solution(blocks) << std::endl;
-    
-    std::vector<int> blocks2 = {1, 5, 5, 2, 6};
-	std::cout << solution(blocks2) << std::endl;
-    
-    std::vector<int> blocks3 = {1, 1};
-	std::cout << solution(blocks3) << std::endl;
-    
-    return 0;
-}
