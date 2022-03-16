@@ -3,6 +3,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="Returning Strings.cpp"/>
     <File Name="Find Maximum and Minimum Val.cpp"/>
     <File Name="Powers of 2.cpp"/>
     <File Name="Is it a palindrome.cpp"/>
