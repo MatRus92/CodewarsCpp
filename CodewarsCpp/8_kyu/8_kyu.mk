@@ -62,7 +62,7 @@ AS       := C:/mingw32/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) $(IntermediateDirectory)/Is it a palindrome.cpp$(ObjectSuffix) $(IntermediateDirectory)/Opposites Attract.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) $(IntermediateDirectory)/Powers of 2.cpp$(ObjectSuffix) $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) $(IntermediateDirectory)/Is it a palindrome.cpp$(ObjectSuffix) $(IntermediateDirectory)/Opposites Attract.cpp$(ObjectSuffix) 
 
 
 
@@ -98,6 +98,12 @@ $(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix): PointsOfReflecti
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/8_kyu/PointsOfReflection.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/PointsOfReflection.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/PointsOfReflection.cpp$(PreprocessSuffix): PointsOfReflection.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/PointsOfReflection.cpp$(PreprocessSuffix) PointsOfReflection.cpp
+
+$(IntermediateDirectory)/Powers of 2.cpp$(ObjectSuffix): Powers of 2.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Powers of 2.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Powers of 2.cpp$(DependSuffix) -MM "Powers of 2.cpp"
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/REPO/CodewarsCpp/CodewarsCpp/8_kyu/Powers of 2.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Powers of 2.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Powers of 2.cpp$(PreprocessSuffix): Powers of 2.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Powers of 2.cpp$(PreprocessSuffix) "Powers of 2.cpp"
 
 $(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix): Count Odd Numbers below n.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Count Odd Numbers below n.cpp$(DependSuffix) -MM "Count Odd Numbers below n.cpp"
