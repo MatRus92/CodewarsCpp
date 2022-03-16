@@ -1,14 +1,14 @@
 #include <cmath>
 
-double round_new(float var)
+double roundoff(double value)
 {
-    double value = (int)(var * 100 + .5);
-    return (double)value / 100;
+  double pow_10 = pow(10.0f, (double)2);
+  return round(value * pow_10) / pow_10;
 }
 
 double square_area(double A) {
   double r = (4 * A) / (2 * M_PI);
-  return round_new(r*r);
+  return roundoff(r*r);
 };
 
 int main()
